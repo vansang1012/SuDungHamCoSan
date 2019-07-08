@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chèn ký tự vào số</title>
+</head>
+<body>
+<h3>Insert dashes(-) beetween even number</h3>
+<script>
+    let  num=prompt("Mời bạn nhập vào số cần chuyển đổi: ");
+    let  str=num.toString();
+    let  result=[str[0]];// khai báo
+
+    for(let i=1;i<str.length;i++){
+        if(str[i-1]%2==0 &&str[i]%2==0){
+            result.push('-',str[i]);
+        }
+        else{
+            result.push(str[i]);
+        }
+    }
+    document.write(result.join('')+"<br/>");
+
+
+</script>
+</body>
+</html>
